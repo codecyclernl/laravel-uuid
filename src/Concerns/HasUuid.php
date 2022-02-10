@@ -16,7 +16,7 @@ trait HasUuid
         return 'string';
     }
 
-    public static function bootUuid()
+    public static function bootHasUuid()
     {
         static::creating(function ($model) {
             if (empty($model->attributes[$model->getKeyName()])) {
